@@ -32,3 +32,12 @@
     border: 1px solid var(--color-white);
     transform: translateY(-1.1rem);
 }
+
+/* ----------------media query (small devises)-------------------- */
+
+@media screen and (max-width: 600px){
+
+    .nav a{
+        font-size: 1.3rem;
+    }
+}

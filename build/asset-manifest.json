@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/edwin-pedraza/React_portafoliopapp/build/static/css/main.e936fd8e.css",
+    "main.js": "/edwin-pedraza/React_portafoliopapp/build/static/js/main.c5a445ca.js",
+    "static/media/foto_edwin.png": "/edwin-pedraza/React_portafoliopapp/build/static/media/foto_edwin.38a294b7081727b18d49.png",
+    "static/media/Edwin Peraza CV IT Engineer.pdf": "/edwin-pedraza/React_portafoliopapp/build/static/media/Edwin Peraza CV IT Engineer.2219957efbd789e10e35.pdf",
+    "static/media/portfolio5.png": "/edwin-pedraza/React_portafoliopapp/build/static/media/portfolio5.a82ae9a163c1ac5e3a07.png",
+    "static/media/portfolio2.jpg": "/edwin-pedraza/React_portafoliopapp/build/static/media/portfolio2.ae187bc4e43ae6dbc263.jpg",
+    "static/media/portfolio6.jpg": "/edwin-pedraza/React_portafoliopapp/build/static/media/portfolio6.72d1107e313049cf15a7.jpg",
+    "static/media/portfolio1.jpg": "/edwin-pedraza/React_portafoliopapp/build/static/media/portfolio1.f5e72352e5aa840702b8.jpg",
+    "static/media/portfolio3.jpg": "/edwin-pedraza/React_portafoliopapp/build/static/media/portfolio3.cbab42559fe73e73906f.jpg",
+    "static/media/portfolio4.jpg": "/edwin-pedraza/React_portafoliopapp/build/static/media/portfolio4.6bf60cbb8fe5f7d7af5d.jpg",
+    "index.html": "/edwin-pedraza/React_portafoliopapp/build/index.html",
+    "main.e936fd8e.css.map": "/edwin-pedraza/React_portafoliopapp/build/static/css/main.e936fd8e.css.map",
+    "main.c5a445ca.js.map": "/edwin-pedraza/React_portafoliopapp/build/static/js/main.c5a445ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e936fd8e.css",
+    "static/js/main.c5a445ca.js"
+  ]
+}

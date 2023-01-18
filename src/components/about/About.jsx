@@ -11,6 +11,8 @@ import {IoLogoGameControllerB} from 'react-icons/io'
 const About = () => {
 
   const [estadoModal, setModal] = useState(false);
+  const [estadoModal2, setModal2] = useState(false);
+  const [estadoModal3, setModal3] = useState(false);
   return (
     <section id='about'>
       <h5>Get To Know</h5>
@@ -38,9 +40,16 @@ const About = () => {
             
             >
             
-            <Interest title__interest = {'Draw'} icon ={<MdOutlineDraw className='about__icon'/>}/>
+            <Interest 
+            estado = {estadoModal2}
+            cambiarEstado = {setModal2}
+            title__interest = {'Draw'} icon ={<MdOutlineDraw className='about__icon'/>}/>
             
-            <Interest title__interest = {'Sport'} icon ={<BiCycling className='about__icon'/>}/>
+            <Interest 
+            estado = {estadoModal3}
+            cambiarEstado = {setModal3}
+            title__interest = {'Sport'} 
+            icon ={<BiCycling className='about__icon'/>}/>
             
           </div>
 
@@ -60,6 +69,24 @@ const About = () => {
         p__modal ={'My passion since I was a child has always been videogames, a passion that continues to accompany me, but now I like to know how it works, how they are created and give life to an idea and share it with friends and be able to play something created by me.'}
 
         p2__modal ={'this is my passion that I continue to cultivate, I study by myself to create videogames in unity as an engine and I use blender and procreate to create character designs or backgraound'}
+      />
+
+      <Modal 
+        estado = {estadoModal2}
+        cambiarEstado = {setModal2}
+        title__modal= {'I love to drawing'}
+        p__modal ={'I love drawing, it was a habit I had as a child but a few years ago I took it up again, and now a little more since it has been a tool to grow my imagination and passion for creating games.'}
+
+      />
+
+      <Modal 
+        estado = {estadoModal3}
+        cambiarEstado = {setModal3}
+        title__modal= {'I Practice sport'}
+        p__modal ={'Another of my habits that I like to do is to practice sports, especially cycling, kick boxing and others.'}
+
+        p2__modal ={'It is one of the things that helps me to relax and think about other things when there are difficult moments or when I have had a difficult day.'}
+
       />
 
     </section>

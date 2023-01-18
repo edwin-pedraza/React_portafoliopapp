@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Interest from './Interest'
+import Modal from './Modal'
 import './about.css'
 import ME from '../../assets/foto_edwin.png'
-import {RiAwardFill} from 'react-icons/ri'
-import {HiUsers} from 'react-icons/hi'
-import {HiFolderOpen} from 'react-icons/hi'
+import {MdOutlineDraw} from 'react-icons/md'
+import {BiCycling} from 'react-icons/bi'
 
-const about = () => {
+import {IoLogoGameControllerB} from 'react-icons/io'
+
+const About = () => {
+
+  const [estadoModal, setModal] = useState(false);
   return (
     <section id='about'>
       <h5>Get To Know</h5>
@@ -19,30 +24,24 @@ const about = () => {
         </div>
 
         <div className="about__content">
+        <h2>Something interest about me</h2>
           <div className="about__cards">
-            <article className='about__card'>
-              
-              <RiAwardFill className='about__icon'/>
-              <h5>Experience</h5>
-              <small> 3+ Year Working</small>
 
-            </article>
-
-            <article className='about__card'>
-
-              <HiUsers className='about__icon'/>
-              <h5>Clients</h5>
-              <small> 200+ Year Worldwide</small>
-
-            </article>
-
-            <article className='about__card'>
-
-              <HiFolderOpen className='about__icon'/>
-              <h5>Projects</h5>
-              <small> 80+ Completed</small>
-
-            </article>
+            
+            
+            <Interest 
+              estado = {estadoModal}
+              cambiarEstado = {setModal}
+              title__interest = {'Game'} 
+              icon ={<IoLogoGameControllerB
+              className='about__icon'/>}/
+            
+            >
+            
+            <Interest title__interest = {'Draw'} icon ={<MdOutlineDraw className='about__icon'/>}/>
+            
+            <Interest title__interest = {'Sport'} icon ={<BiCycling className='about__icon'/>}/>
+            
           </div>
 
           <p>
@@ -53,8 +52,18 @@ const about = () => {
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
       </div>
+
+      <Modal 
+        estado = {estadoModal}
+        cambiarEstado = {setModal}
+        title__modal= {'My Passion for Video Games'}
+        p__modal ={'My passion since I was a child has always been videogames, a passion that continues to accompany me, but now I like to know how it works, how they are created and give life to an idea and share it with friends and be able to play something created by me.'}
+
+        p2__modal ={'this is my passion that I continue to cultivate, I study by myself to create videogames in unity as an engine and I use blender and procreate to create character designs or backgraound'}
+      />
+
     </section>
   )
 }
 
-export default about
+export default About

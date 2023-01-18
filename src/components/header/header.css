@@ -1,7 +1,11 @@
 header{
-    height: 100vh;
-    padding: 5rem;
-    overflow: hidden;
+
+    padding: 5rem; 
+    /* overflow: hidden;  */
+
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
 }
 
 .header__container{
@@ -21,22 +25,30 @@ header{
 
 .header__socials{
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
-}
+    flex-direction: row;
+    justify-content: space-around;
 
-.header__socials::after{
-    content: "";
-    width: 1px;
-    height: 2rem;
-    background-color: var(--color-primary);
-}
 
-.header__socials a{
-    font-size: 2rem;
-}
+    /* font-size: 3rem; */
+  }
+  
+  .header__socials a{
+    font-size: 3rem;
+    display: flex;
+    color: var(--color-primary);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 20px 5px;
+    transition: .3s;
+  }
+
+  .header__socials a:hover{
+    color: var(--color-light);
+    transform: scale(1.5);
+  }
+
+
 
 /* ------------me-------------- */
 
@@ -52,15 +64,59 @@ header{
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
+.content-banner{
+    padding: 20px;
+    background-color: var(--color-bg-variant);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    opacity: .8;
+    z-index: 10;
+    margin-top: 4rem;
+  }
+  
+  .container-circle {
+    border: 20px solid;
+    border-radius: 50%;
+    border-color: var(--circule1);
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+  
+  }
+  .container-img img{
+      
+    border: 10px solid;
+    border-color: var(--circule2);
+    display: block;
+    width: 100%;
+    margin: auto;
+
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
 /* ------------Scrol Down-------------- */
 
 .scroll__down{
     position: absolute;
     right: -2.3rem;
-    bottom: 5rem;
+    bottom: 15rem;
     transform: rotate(90deg);
     font-size: 0.9rem;
 }
+
+.scroll__down-left{
+    position: absolute;
+    left: -2.3rem;
+    bottom: 15rem;
+    transform: rotate(90deg);
+    font-size: 0.9rem;
+}
+
+
+  
 
 /* ------------Media Queries Medium-------------- */
 
@@ -81,8 +137,17 @@ header{
     header{
         height: 100vh;
     }
-    .header__socials, .scroll__down{
+    .scroll__down-left, .scroll__down{
         display: none;
     }
+
+    .header__socials a{
+        font-size: 2rem;
+    }
+
+
+  .container-circle {
+    width: 90%;
+  }
 }
 

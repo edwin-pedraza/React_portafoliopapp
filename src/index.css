@@ -10,6 +10,9 @@
 }
 
 :root{
+
+    --circule1:#6b79b783;
+    --circule2: #A2D2FF;
     --color-bg: #1f1f38;
     --color-bg-variant: #2c2c6c;
     --color-primary: #4db5ff;
@@ -22,6 +25,9 @@
     --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-ms: 90%;
+
+    /* ------modal------ */
+    --color-modala-bg:  rgba(0, 0, 0,.5);
 
 }
 

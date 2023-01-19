@@ -2,7 +2,7 @@ import React from 'react'
 import './contact.css'
 import {MdEmail} from 'react-icons/md'
 import {RiMessengerLine} from 'react-icons/ri'
-import {SiWhatsapp} from 'react-icons/si'
+// import {SiWhatsapp} from 'react-icons/si'
 
 const Contact = () => {
   return (
@@ -28,12 +28,12 @@ const Contact = () => {
               <a href="https://m.me/edwin.pedraza" target= '_blank' rel='noreferrer'> Send a message</a>
             </article>
 
-            <article className='contact__option'>
+            {/* <article className='contact__option'>
               <SiWhatsapp className='contact__option-icon'/>
               <h4>WhatsApp</h4>
               <h5>Edwin@gmail.com</h5>
               <a href="https://wa.me/15551234567" target= '_blank' rel='noreferrer'> Send a message</a>
-            </article>
+            </article> */}
           </div>
 
           <form action="">

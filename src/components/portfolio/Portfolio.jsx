@@ -14,7 +14,7 @@ const data = [
     title: 'Briefcase',
     paragraph: 'it is my last portfolio shows my knowledge and my advance in my knowledge',
     github: 'https://github.com/edwin-pedraza/PortafolioEdwinPedraza',
-    demo: 'portafolioapp/src/components/portfolio/projects/portafolio_github/index.html'
+    demo: 'https://edwin-pedraza.github.io/React_portafoliopapp/build/portafolio_github/index.html'
   },
 
   {

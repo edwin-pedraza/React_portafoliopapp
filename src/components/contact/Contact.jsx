@@ -36,12 +36,12 @@ const Contact = () => {
             </article> */}
           </div>
 
-          <form action="">
+          {/* <form action="">
             <input type="text" name="name" placeholder='Your Full Name' required/>
             <input type="email" name="email" placeholder='Your Email' required/>
             <textarea name="messege" rows="7" placeholder='Message' required></textarea>
             <button type='submit'className='btn btn-primary'>Send Message</button>
-          </form>
+          </form> */}
         </div>
 
     </section>
